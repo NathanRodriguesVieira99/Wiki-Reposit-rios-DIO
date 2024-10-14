@@ -7,7 +7,7 @@ function ItemRepo({ repo, handleRemoveRepo }) {
   }
 
   return (
-    <div className='itemContainer' onClick={handleRemoveRepo}>
+    <div className='itemContainer' onClick={handleRemove}>
       <h3>{repo.name}</h3>
       <p>{repo.full_name}</p>
       <a href={repo.html_url} target='_blank' >Ver Repositório</a>

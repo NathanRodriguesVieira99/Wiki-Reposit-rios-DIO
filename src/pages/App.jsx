@@ -26,11 +26,13 @@ function App() {
     alert("Repositório não encontrado ou repetido")
   }
 
+  //entender melhor a lógica
   const handleRemoveRepo = (id) => {
+    const repoRemover = repos.filter(repo => repo.id !== id)
+    setRepos(repoRemover)
     console.log('removendo', id);
-
   }
-
+  //entender melhor a lógica
 
   return (
     <div className='App'>
